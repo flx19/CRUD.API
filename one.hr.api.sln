@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "one.hr.api", "one.hr.api\one.hr.api.csproj", "{B0D27C04-B9EF-410A-9935-8827D2D01E47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "One.HR.DataAccess", "One.HR.DataAccess\One.HR.DataAccess.csproj", "{95648568-E034-470F-B3CA-4194041C2912}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "One.HR.DataAccess", "One.HR.DataAccess\One.HR.DataAccess.csproj", "{95648568-E034-470F-B3CA-4194041C2912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "one.hr.api.Tests", "one.hr.api.Tests\one.hr.api.Tests.csproj", "{326EC0D7-D6E5-4BEA-B26E-5C67BBD71E7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{95648568-E034-470F-B3CA-4194041C2912}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95648568-E034-470F-B3CA-4194041C2912}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95648568-E034-470F-B3CA-4194041C2912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{326EC0D7-D6E5-4BEA-B26E-5C67BBD71E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326EC0D7-D6E5-4BEA-B26E-5C67BBD71E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326EC0D7-D6E5-4BEA-B26E-5C67BBD71E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326EC0D7-D6E5-4BEA-B26E-5C67BBD71E7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

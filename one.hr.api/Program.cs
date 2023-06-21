@@ -49,6 +49,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IEmployeeRepository,SQLserverEmployeeRepository>();
 builder.Services.AddScoped<IAddressRepository,SQLserverAddressRepository>();
+builder.Services.AddScoped<IAccountNumberValidationService, AccountNumberValidation>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

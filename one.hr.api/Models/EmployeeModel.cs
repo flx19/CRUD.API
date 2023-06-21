@@ -16,5 +16,7 @@ namespace one.hr.api.Models
         public decimal Salary { get; set; }
 
         public int  AddresssID { get; set; }
+
+        public string AccountNumber { get; set; }
     }
 }

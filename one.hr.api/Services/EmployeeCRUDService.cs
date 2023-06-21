@@ -9,14 +9,20 @@ namespace one.hr.api.Services
     {
         private readonly IEmployeeRepository _employeeRepository;
         private readonly IAddressRepository ? _addressRepository;
-        public EmployeeCRUDService(IEmployeeRepository employeeRepository, IAddressRepository addressRepository)
+        private readonly IAccountNumberValidationService _accountNumberValidationService;
+        public EmployeeCRUDService(IEmployeeRepository employeeRepository, IAddressRepository addressRepository, IAccountNumberValidationService accountNumberValidationService)
         {
             _employeeRepository = employeeRepository;
             _addressRepository = addressRepository;
+            _accountNumberValidationService = accountNumberValidationService;
         }
 
         public async Task<EmployeeModel> Create(EmployeeModel model)
         {
+            if(!string.IsNullOrWhiteSpace(model.AccountNumber) && !_accountNumberValidationService.IsValid(model.AccountNumber))
+            {
+                throw new ArgumentException("invalid number");
+            }
             var exisistingaddress = await _addressRepository.GetById(model.AddresssID);
             var employee = new Employee()
             {
